@@ -54,7 +54,7 @@ export default function Example() {
                       <input type="checkbox"/>
                       <div className="control__indicator"></div>
                     </label>
-                    <span className="ml-auto"><a href="#" className="forgot-pass">Forgot Password</a></span>
+                    <span className="ml-auto"><a href="#" className="forgoddt-pass">Forgot Password</a></span>
                   </div>
 
                   <input type="submit" value="Log In" className="btn btn-block btn-primary"/>
