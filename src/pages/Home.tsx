@@ -1,10 +1,9 @@
-
-import './Home.css';
 import './css/style.css'
 import './css/bootstrap.min.css'
 import './css/owl.carousel.min.css'
-import './images/bg_1.jpg'
-
+import '../fonts/icomoon/style.css'
+import bomma from './images/bg_1.jpg'
+import React from "react";
 /*
   This example requires some changes to your config:
   
@@ -30,10 +29,10 @@ export default function Example() {
         <body class="h-full">
         ```
       */}
-      <div className="d-lg-flex half">
-        <div className="bg order-1 order-md-2" style={{backgroundImage:'url("./images/bg_1.jpg")'}}></div>
-        <div className="contents order-2 order-md-1">
 
+      <div className="d-lg-flex half">
+        <div className="bg order-1 order-md-2" style={{backgroundImage: `url(${bomma})`}}></div>
+        <div className="contents order-2 order-md-1">
           <div className="container">
             <div className="row align-items-center justify-content-center">
               <div className="col-md-7">
@@ -50,11 +49,7 @@ export default function Example() {
                   </div>
 
                   <div className="d-flex mb-5 align-items-center">
-                    <label className="control control--checkbox mb-0"><span className="caption" defaultChecked={true} >Remember me</span>
-                      <input type="checkbox"/>
-                      <div className="control__indicator"></div>
-                    </label>
-                    <span className="ml-auto"><a href="#" className="forgoddt-pass">Forgot Password</a></span>
+                    <span className="ml-auto"><a href="#" className="forgot-pass">Forgot Password</a></span>
                   </div>
 
                   <input type="submit" value="Log In" className="btn btn-block btn-primary"/>

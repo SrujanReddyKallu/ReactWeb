@@ -14,8 +14,8 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
-  a:hover {
-    text-decoration: none !important; }
+a:hover {
+  text-decoration: none !important; }
 
 .content {
   padding: 7rem 0; }
@@ -29,28 +29,27 @@ h2 {
 
 @media (max-width: 991.98px) {
   .half .bg {
-    background-image: url("../images/bg_1.jpg");
-    height: 200px; } }
+    height: 21100px; } }
 
 .half .contents {
   background: #f6f7fc; }
 
 .half .contents, .half .bg {
   width: 50%; }
-  @media (max-width: 1199.98px) {
-    .half .contents, .half .bg {
-      width: 100%; } }
-  .half .contents .form-control, .half .bg .form-control {
-    border: none;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    height: 54px;
-    background: #fff; }
-    .half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
-      outline: none;
-      -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
+@media (max-width: 1199.98px) {
+  .half .contents, .half .bg {
+    width: 100%; } }
+.half .contents .form-control, .half .bg .form-control {
+  border: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 54px;
+  background: #fff; }
+.half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
 
 .half .bg {
   background-size: cover;
@@ -77,10 +76,10 @@ h2 {
   margin-bottom: 15px;
   cursor: pointer;
   font-size: 14px; }
-  .control .caption {
-    position: relative;
-    top: .2rem;
-    color: #888; }
+.control .caption {
+  position: relative;
+  top: .2rem;
+  color: #888; }
 
 .control input {
   position: absolute;
