@@ -3,6 +3,7 @@ import './css/bootstrap.min.css'
 import './css/owl.carousel.min.css'
 import '../fonts/icomoon/style.css'
 import bomma from './images/bg_1.jpg'
+import bomma1 from './images/w3.jpeg'
 import React from "react";
 /*
   This example requires some changes to your config:
@@ -31,7 +32,7 @@ export default function Example() {
       */}
 
       <div className="d-lg-flex half">
-        <div className="bg order-1 order-md-2" style={{backgroundImage: `url(${bomma})`}}></div>
+        <div className="bg order-1 order-md-2" style={{backgroundImage: `url(${bomma1})`}}></div>
         <div className="contents order-2 order-md-1">
           <div className="container">
             <div className="row align-items-center justify-content-center">
