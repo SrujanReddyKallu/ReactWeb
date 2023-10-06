@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import { BrowserRouter, Route,Routes } from 'react-router-dom';
-// import './App.css';
-import './pages/Home';
-import Example from "./pages/Home";
-
+import './App.css';
+import Register from "./pages/signup";
+import Login from "./pages/login";
 function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Example />} />
+          <Route path="/signup" element={<Register />} />
+            <Route path="/login" element={<Login />}/>
         </Routes>
       </BrowserRouter>
   );
