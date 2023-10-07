@@ -4,6 +4,10 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.error-list li {
+    color: #dc4444;
+    font-weight: lighter;
+}
 .wrapper{
     background: #ececec;
     padding: 0 20px 0 20px;
@@ -54,7 +58,7 @@ i{
     width: 330px;
     box-sizing: border-box;
 }
-img{
+img1{
     width: 35px;
     position: absolute;
     top: 30px;
