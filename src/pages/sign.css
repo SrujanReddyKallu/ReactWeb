@@ -1,9 +1,26 @@
 /* POPPINS FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');*/
 
 *{
     font-family: 'Poppins', sans-serif;
 }
+/* sign.css */
+
+/* ... Your existing styles ... */
+
+/*.error-list {*/
+/*    border: 1px solid red;*/
+/*    padding: 10px;*/
+/*    margin-top: 10px;*/
+/*    border-radius: 5px;*/
+/*    background-color: #ffe6e6; !* light red background *!*/
+/*}*/
+
+.error-list li {
+    color: #dc4444;
+    font-weight: lighter;
+}
+
 .wrapper{
     background: #ececec;
     padding: 0 20px 0 20px;
@@ -54,7 +71,7 @@ i{
     width: 330px;
     box-sizing: border-box;
 }
-img{
+img2{
     width: 35px;
     position: absolute;
     top: 30px;
