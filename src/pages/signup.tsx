@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Link, useNavigate} from "react-router-dom";
 import './sign.css';
+
 import {auth} from "../firebase";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 export default function Register() {
@@ -13,6 +14,7 @@ export default function Register() {
     const [errorMsg, setErrorMsg] = useState<string[]>([]);
     const [isEmailValid, setIsEmailValid] = useState<boolean>(false);
     const [isPasswordValid, setIsPasswordValid] = useState<boolean>(false);
+    const [loading, setLoading] = useState(false);
 
     const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -82,6 +84,8 @@ export default function Register() {
 
         setErrorMsg(errors);
         if(errors.length === 0) {
+            setLoading(true);
+
             // Proceed with the submission to the server or next ste
             createUserWithEmailAndPassword(auth, values.email, values.pass)
                 .then(async (res) => {
@@ -89,6 +93,7 @@ export default function Register() {
                     await updateProfile(user, {
                         displayName: values.email,
                     });
+                    setLoading(false);
                     navigate("/");
                 })
                 .catch((err) => {
@@ -139,6 +144,7 @@ export default function Register() {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }

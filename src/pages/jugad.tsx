@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import {Link} from "react-router-dom";
-
+import img from "../images/image.png"
 const navigation = [
     { name: 'Aves Detection', href: '#' },
     { name: 'Features', href: '#' },
@@ -23,9 +23,9 @@ export default function Example() {
                             <span className="sr-only">Aves Species Detector</span>
                             {/*<img*/}
                             {/*    className="h-8 w-auto"*/}
-                            {/*    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"*/}
-                            {/*    alt=""*/}
-                            {/*/>*/}
+                            {/*    src={img}*/}
+                            {/*    alt="dsfdsf"*/}
+                            {/*/*/}
                         </a>
                     </div>
                     <div className="flex lg:hidden">

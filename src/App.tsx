@@ -6,6 +6,7 @@ import Login from "./pages/login";
 import Home from "./pages/Home";
 import {auth} from "./firebase";
 import Example from "./pages/jugad";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
     const [userName, setUserName] = useState("");
@@ -24,6 +25,8 @@ function App() {
                 <Route path="/signup" element={<Register/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/jugad" element={<Example/>}/>
+                <Route path="/dashboard" element={<Dashboard/>}/>
+
             </Routes>
         </BrowserRouter>
     );
