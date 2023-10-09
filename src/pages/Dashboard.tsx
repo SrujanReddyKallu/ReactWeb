@@ -9,6 +9,7 @@ import {
 import img from "../images/image.png"
 import About1 from "./components/Homescreenimages";
 import Product from "./components/product";
+import Product3 from "./product3";
 const user = {
     name: "Tom Cook",
     email: "tom@example.com",
@@ -244,6 +245,7 @@ export default function Example() {
                     {/* Your content */}
                     <About1/>
                     <Product/>
+                    <Product3/>
                 </div>
             </main>
         </div>

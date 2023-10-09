@@ -7,7 +7,8 @@ import Home from "./pages/Home";
 import {auth} from "./firebase";
 import Example from "./pages/jugad";
 import Dashboard from "./pages/Dashboard";
-
+import project1 from "./pages/project1";
+import Project1 from "./pages/project1";
 function App() {
     const [userName, setUserName] = useState("");
 
@@ -26,7 +27,7 @@ function App() {
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/jugad" element={<Example/>}/>
                 <Route path="/dashboard" element={<Dashboard/>}/>
-
+                <Route path="/project1" element={<Project1/>}/>
             </Routes>
         </BrowserRouter>
     );
