@@ -56,7 +56,7 @@ export default function Login() {
         if (errorMsg.length === 0) {
             signInWithEmailAndPassword(auth, values.email, values.pass)
                 .then(async () => {
-                    navigate("/");
+                    navigate("/Dashboard");
                 })
                 .catch((err) => {
                     switch (err.code) {

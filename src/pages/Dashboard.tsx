@@ -10,6 +10,7 @@ import img from "../images/image.png"
 import About1 from "./components/Homescreenimages";
 import Product from "./components/product";
 import Product3 from "./product3";
+import {Link} from "react-router-dom";
 const user = {
     name: "Tom Cook",
     email: "tom@example.com",
@@ -78,13 +79,13 @@ export default function Example() {
                                                             <Popover.Panel className="absolute z-10 mt-2 w-48 rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                                                 <div className="p-4">
                                                                     {projectItems.map((project) => (
-                                                                        <a
+                                                                        <Link
                                                                             key={project.name}
-                                                                            href={project.href}
+                                                                            to= "/Project1"
                                                                             className="block rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
                                                                         >
                                                                             {project.name}
-                                                                        </a>
+                                                                        </Link>
                                                                     ))}
                                                                 </div>
                                                             </Popover.Panel>

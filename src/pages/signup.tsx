@@ -94,7 +94,7 @@ export default function Register() {
                         displayName: values.email,
                     });
                     setLoading(false);
-                    navigate("/");
+                    navigate("/dashboard");
                 })
                 .catch((err) => {
                     setErrorMsg(err.message);

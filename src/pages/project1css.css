@@ -1,0 +1,50 @@
+.side-imag{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.upload-btn-wrapper {
+    margin-top: 30px; /* Adjust this value according to your preference */
+}
+
+/*.response-content {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100%;*/
+/*    padding: 20px;*/
+/*box-sizing: border-box;*/
+/*}*/
+.response-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /*padding: 20px;*/
+    box-sizing: border-box;
+    /*background-color: #a7c5c5;  !* Light background color for contrast *!*/
+    /*border-left:#e0e0e0;  !* A border to visually separate from the image side *!*/
+}
+
+.response-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.response-content p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    /*max-width: 80%;  !* Adjust to ensure long text doesn't overflow *!*/
+}

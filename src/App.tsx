@@ -22,7 +22,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home name={userName}/>}/>
+                <Route path="/" element={<Example/>}/>
                 <Route path="/signup" element={<Register/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/jugad" element={<Example/>}/>
