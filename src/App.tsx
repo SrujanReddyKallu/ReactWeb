@@ -23,11 +23,11 @@ function App() {
         <BrowserRouter basename="/ReactWeb">
             <Routes>
                 <Route path="/ReactWeb" element={<Example/>}/>
-                <Route path="/signup" element={<Register/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/jugad" element={<Example/>}/>
-                <Route path="/dashboard" element={<Dashboard/>}/>
-                <Route path="/project1" element={<Project1/>}/>
+                <Route path="/ReactWeb/signup" element={<Register/>}/>
+                <Route path="/ReactWeb/login" element={<Login/>}/>
+                <Route path="/ReactWeb/jugad" element={<Example/>}/>
+                <Route path="/ReactWeb/dashboard" element={<Dashboard/>}/>
+                <Route path="/ReactWeb/project1" element={<Project1/>}/>
             </Routes>
         </BrowserRouter>
     );
