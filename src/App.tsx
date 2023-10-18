@@ -20,9 +20,9 @@ function App() {
         });
     }, []);
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/ReactWeb">
             <Routes>
-                <Route path="/" element={<Example/>}/>
+                <Route path="/ReactWeb" element={<Example/>}/>
                 <Route path="/signup" element={<Register/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/jugad" element={<Example/>}/>
