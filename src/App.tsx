@@ -9,6 +9,8 @@ import Example from "./pages/jugad";
 import Dashboard from "./pages/Dashboard";
 import project1 from "./pages/project1";
 import Project1 from "./pages/project1";
+import { HashRouter, Link } from "react-router-dom";
+
 function App() {
     const [userName, setUserName] = useState("");
 
@@ -20,7 +22,7 @@ function App() {
         });
     }, []);
     return (
-        <BrowserRouter basename="/ReactWeb">
+        <HashRouter basename='/'>
             <Routes>
                 <Route path="/ReactWeb" element={<Example/>}/>
                 <Route path="/ReactWeb/signup" element={<Register/>}/>
@@ -29,7 +31,7 @@ function App() {
                 <Route path="/ReactWeb/dashboard" element={<Dashboard/>}/>
                 <Route path="/ReactWeb/project1" element={<Project1/>}/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
