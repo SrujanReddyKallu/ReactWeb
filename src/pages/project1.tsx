@@ -53,7 +53,7 @@ export default function Project1(){
         formData.append('file', file);
 
         try {
-            const response = await fetch('/predict', {  // Proxy will handle the URL conversion
+            const response = await fetch('http://107.23.73.95:5000/predict', {  // Proxy will handle the URL conversion
                 method: 'POST',
                 body: formData,
             });
